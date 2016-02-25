@@ -9,7 +9,7 @@ RUN apt-get install -qy software-properties-common && \
 
 ADD launch.sh /launch.sh
 
-RUN chmod +x /launch.sh"
+RUN chmod +x "/launch.sh"
 
 VOLUME ["/data"]
 
