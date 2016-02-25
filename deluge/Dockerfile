@@ -4,9 +4,13 @@ RUN apt-get install -qy software-properties-common && \
     add-apt-repository ppa:deluge-team/ppa && \
     apt-get update -q && \
     apt-get upgrade -qy && \
-    apt-get install -qy deluge
+    apt-get install -qy deluged deluge-web
+
+ADD launch.sh /launch.sh
 
 EXPOSE 53160
 EXPOSE 53160/udp
 EXPOSE 8112
 EXPOSE 58846
+
+CMD ["/launch.sh"]
