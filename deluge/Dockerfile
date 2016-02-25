@@ -11,4 +11,7 @@ sudo apt-get update
 sudo apt-get install deluge
 
 
+EXPOSE 53160
+EXPOSE 53160/udp
 EXPOSE 8112
+EXPOSE 58846
