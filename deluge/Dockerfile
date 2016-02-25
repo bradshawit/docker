@@ -11,7 +11,7 @@ ADD launch.sh /launch.sh
 
 RUN chmod +x "/launch.sh"
 
-VOLUME ["/data"]
+VOLUME ["/data/deluge"]
 
 EXPOSE 53160
 EXPOSE 53160/udp
