@@ -7,8 +7,11 @@ RUN apt-get install -qy software-properties-common && \
     apt-get install -qy deluged && \
     apt-get install -qy deluge-web
 
+ADD launch.sh /launch.sh
+
 EXPOSE 53160
 EXPOSE 53160/udp
 EXPOSE 8112
 EXPOSE 58846
 
+CMD ["/launch.sh"]
