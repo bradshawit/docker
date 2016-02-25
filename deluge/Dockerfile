@@ -9,6 +9,8 @@ RUN apt-get install -qy software-properties-common && \
 
 ADD launch.sh /launch.sh
 
+VOLUME ["/data"]
+
 EXPOSE 53160
 EXPOSE 53160/udp
 EXPOSE 8112
