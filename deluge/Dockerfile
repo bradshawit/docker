@@ -5,7 +5,8 @@ RUN apt-get install -qy software-properties-common && \
     apt-get update -q && \
     apt-get upgrade -qy && \
     apt-get install -qy deluged && \
-    apt-get install -qy deluge-web
+    apt-get install -qy deluge-web && \
+    apt-get clean
 
 ADD launch.sh /launch.sh
 
