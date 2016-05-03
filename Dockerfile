@@ -1,4 +1,4 @@
-FROM bradshawit/ubuntu:xenial
+FROM ubuntu:xenial
 
 RUN apt-get update -q && \
     apt-get upgrade -qy && \
