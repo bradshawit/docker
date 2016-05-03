@@ -2,8 +2,8 @@ FROM ubuntu:xenial
 
 RUN apt-get update -q && \
     apt-get upgrade -qy && \
-	apt-get install -qy software-properties-common && \
-	add-apt-repository -u -y ppa:deluge-team/ppa && \
+    apt-get install -qy software-properties-common && \
+    add-apt-repository -u -y ppa:deluge-team/ppa && \
     apt-get install -qy deluged && \
     apt-get install -qy deluge-web && \
     apt-get clean
